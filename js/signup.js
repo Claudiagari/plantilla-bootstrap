@@ -9,4 +9,12 @@ $(document).ready(function() {
     var PATERNEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
     console.log(PATERNEMAIL.test($(this).val()));
   });
+  $password.on('input', function() {
+    if ($(this).val().length > 0) {
+      console.log('sigue ingresando');
+    } else {
+      alert('no cumple');
+    }
+  });
+  
 });
